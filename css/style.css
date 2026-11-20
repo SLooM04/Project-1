@@ -14,14 +14,6 @@ justify-content: center;
 align-items: center;
 }
 
-/* div{
-    background-color: aqua;
-    width: 120px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .manama img{
     width: 120px;
@@ -30,19 +22,5 @@ align-items: center;
 
 #game-board{
     background-color: aqua;
-}
-
-.card Manama{
- background-color: aqua;
-}
-.card {
-  margin: 3vh;
-}
-
-.card.outline {
-  border: 0.15em dashed #202d7a;
-}
-
-.card.shadow {
-  box-shadow: 7px 7px 7px 0 rgba(41, 41, 41, 0.95) !important;
+    display: grid;
 }
