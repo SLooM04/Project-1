@@ -1,4 +1,11 @@
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
 h1{
     color: sienna;
     justify-content: center;
@@ -6,43 +13,60 @@ h1{
 }
 
 body{
-
+height: 100vh;
+align-items: center;
 background-color: blanchedalmond;
 }
 
-p{
-justify-content: center;
-align-items: center;
-}
-
-
-.manama img{
-    width: 120px;
-    height: 90px;
+p, h3 {
+  text-align: center;
+  display: block;
 }
 
 .game-board {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 15px;
+  grid-template-columns: repeat(4, 150px);
+  gap: 20px;
+  padding: 10px;
   justify-content: center;
   margin-top: 20px;
+  
 }
 .card {
   width: 150px;
   height: 180px;
   position: relative;
+  border-radius: 300px;
+  transform-style: preserve-3d;
+  transform: all .2s;
 }
 
-.card-back img {
-  width: 100%;
-  height: 100%;
-}
+
 
 .card-front,
 .card-back {
   position: absolute;
-  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
+  backface-visibility: hidden;
+}
+.card-front img,
+.card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card.card.flipped{
+  transform: rotateY(180deg);
 }
