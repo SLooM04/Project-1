@@ -4,80 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bahrain City Pairs</title>
-      <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" defer></script>
 </head>
 <body>
 
-<button id="start">Start</button>
- <button id="reset">Reset</button>  
- 
 <h1>Bahrain City Pairs</h1>
-<p> To play the game, click Start Game and simply click on any two cards to flip them over and reveal the hidden cities; if the two cities match, they will stay face up, but if they don't, they will flip back over, so keep memorizing the locations and finding matching pairs until you clear the entire board to win!</p>
-<h3>Try left: 5/5</h3>
-<h3>Cards Matched 0/6</h3>
-<h3>Timer:</h3>
-<div class="game-board">
-    
-    <div class="card Manama">
-        <div class="card-front"><img src="./assets/؟.png"></div>
-        <div class="card-back">
-           <img src="./assets/Manama.jpg"> 
-         </div>
-         
-    </div>
-    <div class="card Manama">
-        <div class="card-front"><img src="./assets/؟.png"></div>
-        <div class="card-back"> <img src="./assets/Manama.jpg"> </div>
-        
-    </div>
 
-    <div class="card Muharraq">
-        <div class="card-front"><img src="./assets/؟.png"></div>
-        <div class="card-back"><img src="./assets/muharraq.jpg"></div>
-    </div>
-    <div class="card Muharraq">
-        <div class="card-front"><img src="./assets/؟.png"></div>
-        <div class="card-back"><img src="./assets/muharraq.jpg"></div>
-    </div>
+<p id="instructions">
+    To play the game, click Start and then click on any two cards to flip them over.
+    If the two cities match, they stay face up. If they don't match, they flip back over.
+    Find all 6 pairs before the 30 seconds or your 5 tries run out to win!
+</p>
 
-    <div class="card Bani-Jamra">
-        <div class="card-front"><img src="./assets/؟.png"></div>
-        <div class="card-back"><img src="./assets/banijamra.jpg"></div>
-    </div>
-    <div class="card Bani-Jamra">
-        <div class="card-front"><img src="./assets/؟.png"></div>
-        <div class="card-back"><img src="./assets/banijamra.jpg"></div>
-    </div>
-
-    <div class="card Aali">
-        <div class="card-front"><img src="./assets/؟.png"></div>
-        <div class="card-back"><img src="./assets/aali.jpg"></div>
-    </div>
-    <div class="card Aali">
-        <div class="card-front"><img src="./assets/؟.png"></div>
-        <div class="card-back"><img src="./assets/aali.jpg"></div>
-    </div>
-
-    <div class="card Barbar">
-        <div class="card-front"><img src="./assets/؟.png"></div>
-        <div class="card-back"><img src="./assets/barbar.jpg"></div>
-    </div>
-    <div class="card Barbar">
-        <div class="card-front"><img src="./assets/؟.png"></div>
-        <div class="card-back"><img src="./assets/barbar.jpg"></div>
-    </div>
-
-    <div class="card Jidhafs">
-        <div class="card-front"><img src="./assets/؟.png"></div>
-        <div class="card-back"><img src="./assets/jidhafs.jpg"></div>
-    </div>
-    <div class="card Jidhafs">
-        <div class="card-front"><img src="./assets/؟.png"></div>
-        <div class="card-back"><img src="./assets/jidhafs.jpg"></div>
-    </div>
+<div id="controls">
+    <button id="start">Start</button>
+    <button id="reset">Reset</button>
 </div>
 
+<h3 id="tries">Tries left: 5/5</h3>
+<h3 id="matches">Pairs matched: 0/6</h3>
+<h3 id="timer">Timer: 30s</h3>
+
+<h2 id="message">Click Start to begin!</h2>
+
+<div class="game-board">
+
+    <div class="card">
+        <div class="card-front"><img src="./assets/؟.png" alt="Hidden card"></div>
+        <div class="card-back"><img src="./assets/؟.png" alt="City card"></div>
+    </div>
+    <div class="card">
+        <div class="card-front"><img src="./assets/؟.png" alt="Hidden card"></div>
+        <div class="card-back"><img src="./assets/؟.png" alt="City card"></div>
+    </div>
+    <div class="card">
+        <div class="card-front"><img src="./assets/؟.png" alt="Hidden card"></div>
+        <div class="card-back"><img src="./assets/؟.png" alt="City card"></div>
+    </div>
+    <div class="card">
+        <div class="card-front"><img src="./assets/؟.png" alt="Hidden card"></div>
+        <div class="card-back"><img src="./assets/؟.png" alt="City card"></div>
+    </div>
+    <div class="card">
+        <div class="card-front"><img src="./assets/؟.png" alt="Hidden card"></div>
+        <div class="card-back"><img src="./assets/؟.png" alt="City card"></div>
+    </div>
+    <div class="card">
+        <div class="card-front"><img src="./assets/؟.png" alt="Hidden card"></div>
+        <div class="card-back"><img src="./assets/؟.png" alt="City card"></div>
+    </div>
+    <div class="card">
+        <div class="card-front"><img src="./assets/؟.png" alt="Hidden card"></div>
+        <div class="card-back"><img src="./assets/؟.png" alt="City card"></div>
+    </div>
+    <div class="card">
+        <div class="card-front"><img src="./assets/؟.png" alt="Hidden card"></div>
+        <div class="card-back"><img src="./assets/؟.png" alt="City card"></div>
+    </div>
+    <div class="card">
+        <div class="card-front"><img src="./assets/؟.png" alt="Hidden card"></div>
+        <div class="card-back"><img src="./assets/؟.png" alt="City card"></div>
+    </div>
+    <div class="card">
+        <div class="card-front"><img src="./assets/؟.png" alt="Hidden card"></div>
+        <div class="card-back"><img src="./assets/؟.png" alt="City card"></div>
+    </div>
+    <div class="card">
+        <div class="card-front"><img src="./assets/؟.png" alt="Hidden card"></div>
+        <div class="card-back"><img src="./assets/؟.png" alt="City card"></div>
+    </div>
+    <div class="card">
+        <div class="card-front"><img src="./assets/؟.png" alt="Hidden card"></div>
+        <div class="card-back"><img src="./assets/؟.png" alt="City card"></div>
+    </div>
+
+</div>
 
 </body>
 </html>
