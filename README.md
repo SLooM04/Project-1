@@ -1,18 +1,63 @@
-# Project-1
+# Bahrain Memory Match 🇧🇭
 
 ## Project Planning
 
-- [Project board](https://github.com/users/SLooM04/projects/1)
-- [Wireframe]
+- [Project Board](https://github.com/users/SLooM04/projects/1)
+- [Wireframe](https://github.com/user-attachments/assets/6297a948-c2d5-4a71-95d2-2cefb76eb5ec)
 
-  <img width="1388" height="878" alt="wireframe" src="https://github.com/user-attachments/assets/6297a948-c2d5-4a71-95d2-2cefb76eb5ec" />
+<img width="1388" height="878" alt="wireframe" src="https://github.com/user-attachments/assets/6297a948-c2d5-4a71-95d2-2cefb76eb5ec" />
 
 ### Game Description
-A card matching game that you need to match the match Paris and you should match all correctly if not and the timer finished you will lose also if you finished your number of try's you lose
 
-### Sprint 1
+Bahrain Memory Match is a card matching memory game featuring different cities and areas in Bahrain.
 
-Goal: [Player can start the game, and reset and click to flip the cards with information show about the game]
+The player needs to find all 6 matching pairs by flipping two cards at a time. If the cards match, they remain flipped. If they do not match, they flip back over after one second.
 
-Start: [16 nov]
-End: [24 nov]
+The player must find all pairs within 30 seconds and a maximum of 6 attempts. If the time runs out or all attempts are used, the player loses.
+
+## Screenshot
+
+<img width="1353" alt="Bahrain Memory Match Screenshot" src="https://github.com/user-attachments/assets/a6820964-ca6c-483e-808d-371b99d7091b" />
+
+## Getting Started
+
+### Live Demo
+
+[Click here to play Bahrain Memory Match](https://sloom04.github.io/Project-1/)
+
+### How to Play
+
+1. Click the **Start** button to begin the game.
+2. Click on any two cards to reveal the pictures.
+3. If the two cards match, they will remain flipped.
+4. If the cards do not match, they will flip back after one second.
+5. Find all 6 matching pairs to win the game.
+
+### Game Rules
+
+- You have 30 seconds to complete the game.
+- You have a maximum of 6 attempts.
+- You must find all 6 matching pairs before time runs out or you run out of attempts.
+- Click the **Reset** button to restart the game.
+
+## Attributions / Credits
+
+
+
+## Technologies Used
+
+
+
+## Future Enhancements
+
+- Add different difficulty levels (Easy, Medium, and Hard).
+- Add sound effects when cards are flipped or matched.
+- Make the game responsive for mobile devices.
+
+## Sprint 1
+
+**Goal:** Allow players to start and reset the game, flip cards, and view game instructions and information.
+
+**Start:** 16 November
+
+**End:** 24 November
