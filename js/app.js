@@ -23,7 +23,7 @@ const cities = [
 
 const cardPositions = []
 const gameBoard = document.querySelector(".game-board")
-const allCards = document.querySelectorAll(".card")
+
 const startBt= document.querySelectorAll("#start")
 const resetBt= document.querySelectorAll("#reset")
 const tries= document.querySelector("#tries")
@@ -41,6 +41,7 @@ function renderCards() {
     card.classList.add("card")
     card.dataset.city = city.name
     card.dataset.index = index
+  
 
     card.innerHTML = `
       <div class="card-front">
@@ -51,10 +52,13 @@ function renderCards() {
       </div>
     `;
 
+
+
     card.addEventListener("click", handleCardClick)
     gameBoard.appendChild(card)
     
   });
+  shuffle()
 }
 
 function handleCardClick() {
@@ -112,7 +116,11 @@ if (triesLeft===0){
 }
  
 
-// function shuffle{
-// //  return Math.floor(Math.random() * max);
+function shuffle() {
+  const allCards = document.querySelectorAll(".card")
+  allCards.forEach((card) => {
+    let rand = Math.floor(Math.random() * 12);
+    card.style.order = rand;
+  });
+}
 
-// }
