@@ -70,3 +70,13 @@ p, h3 {
 .card.card.flipped{
   transform: rotateY(180deg);
 }
+
+h2{
+  display: flex;
+  justify-content: center;
+}
+
+.start,.reset{
+    display: flex;
+  justify-content: center;
+}
