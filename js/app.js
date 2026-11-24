@@ -1,4 +1,4 @@
-// console.log('test')
+
 
 let firstCard=null
 let secondCard=null
@@ -23,7 +23,7 @@ const cities = [
   
 ]
 
-const cardPositions = []
+
 const gameBoard = document.querySelector(".game-board")
 
 const startBt= document.querySelector("#start")
@@ -38,7 +38,7 @@ const timer = document.querySelector("#timer")
 function renderCards() {
 
   gameBoard.innerHTML = ""
-  cardPositions.length = 0
+  
 
   const distributedCards = [...cities, ...cities]
 
@@ -76,11 +76,11 @@ function handleCardClick() {
 
   if (firstCard == null) {
     firstCard = this
-    console.log(firstCard.dataset.city)
+    
     this.classList.add("flipped")
   } else if (firstCard !== this) {
     secondCard = this
-    console.log(secondCard.dataset.city)
+   
     this.classList.add("flipped")
     handleMatch()
   }
@@ -93,7 +93,7 @@ function handleMatch() {
   if (firstCard.dataset.city === secondCard.dataset.city) {
    displayMatched()
   
-    console.log("matched")
+    
      firstCard = null
      secondCard = null
 
@@ -101,7 +101,7 @@ function handleMatch() {
   }
   
   else{
-    console.log("unmatched")
+   
     displayUnMatched()
     lockBoard=true
 
@@ -136,9 +136,9 @@ let matches=0
 
  let triesLeft= 6
 function displayUnMatched(){
-  console.log(triesLeft)
+  
  triesLeft = triesLeft -1
- console.log(triesLeft)
+
 tries.textContent = "Tries left: " + triesLeft + "/6"
 if (triesLeft===0){
   messages.textContent=("Out of moves! Give it another shot")
