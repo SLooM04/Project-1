@@ -18,8 +18,8 @@ const cities = [
   { name: "Muharraq", img: "./assets/muharraq.jpg" },
   { name: "Bani-Jamra", img: "./assets/banijamra.jpg" },
   { name: "Aali", img: "./assets/aali.jpg" },
-  { name: "Barbar", img: "./assets/barbar.jpg" },
-  { name: "Jidhafs", img: "./assets/jidhafs.jpg" }
+  { name: "isaTown", img: "./assets/isaTown.jpg" },
+  { name: "barbar", img: "./assets/barbar.jpg" }
   
 ]
 
@@ -113,9 +113,6 @@ function handleMatch() {
 
       cardOne.classList.remove("flipped")
       cardTwo.classList.remove("flipped")
-
-  
-
       lockBoard = false
 
     }, 1000)
@@ -198,7 +195,7 @@ function startTimer() {
 
     timeLeft--
 
-    timer.textContent = "Timer:" + timeLeft + "s"
+    timer.textContent = "Timer: " + timeLeft + "s"
 
     if (timeLeft === 0) {
       clearInterval(timeInterval)
