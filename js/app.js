@@ -8,6 +8,7 @@ let reset=false
 let timeLeft= 30
 let timeInterval = null
 
+let lockBoard = false
 
 
 const frontCard = './assets/؟.png'
@@ -62,6 +63,8 @@ function renderCards() {
 }
 
 function handleCardClick() {
+if (lockBoard) return
+
   if (this.classList.contains("flipped")) return
 
   if (firstCard == null) {
@@ -83,23 +86,40 @@ function handleMatch() {
    displayMatched()
   
     console.log("matched")
+     firstCard = null
+  secondCard = null
+
   }
   
-  if (firstCard.dataset.city !== secondCard.dataset.city) {
+  else{
     console.log("unmatched")
     displayUnMatched()
+    lockBoard=true
+
+    setTimeout(() => {
+
+      firstCard.classList.remove("flipped")
+      secondCard.classList.remove("flipped")
+
+      firstCard = null
+      secondCard = null
+
+      lockBoard = false
+
+    }, 2000)
+
   }
 
-  firstCard = null
-  secondCard = null
 }
+
 
 let matches=0
  function displayMatched(){
   matches += 1
   match.textContent = "Pairs matched: " +matches+"/6"
   if(matches===6){
-    messages.textContent=("You found all the pairs! Great memory.")
+   messages.textContent=("You found all the pairs! Great memory.")
+   
   }
  }
 
