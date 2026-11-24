@@ -105,13 +105,16 @@ function handleMatch() {
     displayUnMatched()
     lockBoard=true
 
-    setTimeout(() => {
-
-      firstCard.classList.remove("flipped")
-      secondCard.classList.remove("flipped")
-
+    const cardOne = firstCard
+    const cardTwo = secondCard
       firstCard = null
       secondCard = null
+    setTimeout(() => {
+
+      cardOne.classList.remove("flipped")
+      cardTwo.classList.remove("flipped")
+
+  
 
       lockBoard = false
 
