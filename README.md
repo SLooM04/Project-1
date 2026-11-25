@@ -9,9 +9,7 @@
 
 ### Game Description
 
-Bahrain Memory Match is a card matching memory game featuring different cities and areas in Bahrain.
-
-The player needs to find all 6 matching pairs by flipping two cards at a time. If the cards match, they remain flipped. If they do not match, they flip back over after one second.
+Bahrain Memory Match is a card matching memory game. The player needs to find all 6 matching pairs by flipping two cards at a time.
 
 The player must find all pairs within 30 seconds and a maximum of 6 attempts. If the time runs out or all attempts are used, the player loses.
 
@@ -41,12 +39,22 @@ The player must find all pairs within 30 seconds and a maximum of 6 attempts. If
 - Click the **Reset** button to restart the game.
 
 ## Attributions / Credits
+- [W3Schools - Flip The Card](https://www.w3schools.com/howto/howto_css_flip_card.asp) – card flip
+- [MDN Web - CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) – Game board grid
+- [MDN Web - Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) – Generating random numbers to shuffle the cards.
+- [W3Schools - Style order Property](https://www.w3schools.com/jsref/prop_style_order.asp) – Shuffling
+- [MDN Web - Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) – Duplicating array
+- [MDN Web - HTMLElement: dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset) – matching card city data
 
-
+### Cards & Images
+- **Card Design:** Custom game cards generated and styled using [Google Gemini](https://gemini.google.com/)
+- **Reference Photos:** Reference images of Bahraini landmarks and traditional crafts were sourced via Google
 
 ## Technologies Used
-
-
+- HTML
+- CSS
+- JavaScript
+- Git & GitHub
 
 ## Future Enhancements
 
